@@ -1,0 +1,127 @@
+package basic.dev;
+
+import java.util.Scanner;
+
+public class MainApp {
+
+	private static final Scanner sc = null;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner sc = new Scanner(System.in);
+//        1*họ tên và năm sinh của học sinh
+        System.out.println("Bai 1");
+        
+        System.out.println("Nhap ho va ten :");
+        String hoVaTen = sc.nextLine();
+        
+        System.out.println("Nhap nam sinh");
+        Long namSinh = sc.nextLong();
+        
+//        2*điểm toán, điểm lý, điểm văn
+        
+        System.out.println("Bai 2");
+        
+        System.out.println("Nhap diem toan");
+        int dt = sc.nextInt();
+        System.out.println("Nhap diem ly");
+        int dl = sc.nextInt();
+        System.out.println("Nhap diem van");
+        int dv = sc.nextInt();
+        
+        float trungBinh = (dt + dv + dl)/3;
+        
+        System.out.println("Diem trung binh mon la " + trungBinh);
+        
+//        3*hai cạnh, tính diện tích, chu vi của hình chữ nhật
+        
+        System.out.println("Bai 3");
+        
+        System.out.println("Nhap canh a");
+        int a = sc.nextInt();
+        System.out.println("Nhap canh b");
+        int b = sc.nextInt();
+         
+        float dienTich = (a * b);
+        System.out.println("Dien tich hcn la " + dienTich);
+        float chuVi = (a + b)*2;
+        System.out.println("Chu vi hcn la " + chuVi);
+        
+//      4  *hai số thực và in ra tổng, hiệu, tích, thương
+        System.out.println("Bai 4");
+        
+        System.out.println("Nhap a");
+		a = sc.nextInt();
+		System.out.println("Nhap b");
+		b = sc.nextInt();
+            
+		float tong = (a + b);
+        System.out.println("Tong cua ab la: " +( a + b));
+        float hieu = (a - b);
+        System.out.println("Hieu cua ab la: " + (a - b));
+        float tich = (a * b);
+        System.out.println("Tich cua ab la: " + a * b);
+        float Thuong = (a / b);
+        System.out.println("Thuong cua ab la: " + a / b);
+
+
+ 
+//     5* Tìm số lớn nhất, nhỏ nhất và in ra tổng của 3 số
+//	System.out.println("Bai 5");
+        
+        
+//        System.out.println("So nguyen a   ");
+//    int nguyena = sc.nextInt();
+//    System.out.println("So nguyen b   ");
+//    int nguyenb = sc.nextInt();
+//    System.out.println("So nguyen c   ");
+//    int nguyenc = sc.nextInt();
+//	max(nguyena, nguyenb, nguyenc);
+//	min(nguyena, nguyenb, nguyenc);
+//	
+//	float tongso = (nguyena + nguyenb + nguyenc);
+//    System.out.println("Tong cua 3 so nguyen la: " + (nguyena + nguyenb + nguyenc));
+//	}
+//	private static void min(int nguyena, int nguyenb, int nguyenc) {
+//		if (nguyena < nguyenb && nguyena < nguyenc) {
+//			System.out.println(nguyena + " a la so nho nhat");
+//
+//		}
+//		
+//			if (nguyenb < nguyena && nguyenb < nguyenc) {
+//				System.out.println(nguyenb + " b la so nho nhat");
+//			
+//			}
+//			if (nguyenc < nguyena && nguyenc < nguyenb) {
+//				System.out.println(nguyenc + " c la so nho nhat");
+//			
+//			}}
+//	private static void max(int nguyena, int nguyenb, int nguyenc) {
+//		if (nguyena > nguyenb && nguyena > nguyenc) {
+//			System.out.println(nguyena + " a la so lon nhat");
+//		}
+//		
+//			if (nguyenb > nguyena && nguyenb > nguyenc) {
+//				System.out.println(nguyenb + " b la so lon nhat");
+//				
+//		}
+//			if (nguyenc > nguyena && nguyenc > nguyenb) {
+//				System.out.println(nguyenc + " c la so lon nhat");
+//		
+//			}
+//	6*Kiểm tra xem a có chia hết cho b không và  ngược lại. In kết quả
+       System.out.println("Bai 6");
+       
+    System.out.println("So nguyen a ");
+    int nguyen1a = sc.nextInt();
+    System.out.println("So nguyen b ");
+    int nguyen1b = sc.nextInt();    
+    if(nguyen1a % nguyen1b == 0 )  {
+		System.out.println("so a co the chia het b va ket qua la " + nguyen1a / nguyen1b);
+    }else {
+    	if(nguyen1b % nguyen1a == 0 )  {
+    		System.out.println("so b co the chia het a va ket qua la " + nguyen1b / nguyen1a);
+    	}else {
+    		System.out.println("Hai so ko chia het dc cho nhau");
+    	}
+    }
+    }}
